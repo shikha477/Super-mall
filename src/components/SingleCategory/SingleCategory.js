@@ -25,9 +25,15 @@ const SingleCategory = ({products, status}) => {
 
             <div className='container'>
                 <div className='cat-single-content'>
-                    <div className='section-title'>
+                    {/* <div className='section-title'>
                         <h3 className='text-uppercase fw-7 text-regal-blue ls-1'>{products[0].category.name}</h3>
-                    </div>
+                    </div> */}
+                    <div className='section-title'>
+  <h3 className='text-uppercase fw-7 text-regal-blue ls-1'>
+    {products?.[0]?.category?.name }
+  </h3>
+</div>
+
                     <div className='product-items grid'>
                         {
                             products.map(product => (
